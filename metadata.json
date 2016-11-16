@@ -1,0 +1,10 @@
+{
+    "name": "gherlein/vexilla2",
+    "versions": [{
+        "version": "0.1.0",
+        "providers": [{
+            "name": "virtualbox",
+            "url": "file://package.box"
+        }]
+    }]
+}
