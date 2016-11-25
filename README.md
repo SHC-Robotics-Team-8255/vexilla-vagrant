@@ -21,7 +21,7 @@ files together under ~/vagrant.  Clone this repo into that folder.
       git clone 
       vagrant up
 
-Vagrant will start a virtual machine running linux.  Once it completes
+Vagrant will start a virtual machine (VM) running linux.  Once it completes
 launching you can ssh to that virtual machine by typing:
 
       vagrant ssh
@@ -50,4 +50,30 @@ troubleshooting of that may be needed to make settings in VirtualBox
 to allow this.  If it complains about no USB ports being available
 then you probably did not install the VirtualBox extensions.  Check
 that before you do anything else.
+
+Note that to issue vagrant commands to the VM you MUST be in the
+directory where this Vagrantfile is.  You cannot be in another directory.
+
+
+##Stopping and Starting the Linux VM##
+
+To stop the VM, exit the ssh session back to your computer terminal
+(press ctrl-D).  Then type:
+
+       vagrant halt
+
+The VM will be paused in the exact state it was in.  When you want to
+start it again type:
+
+      vagrant up
+
+It will keep all the files you left on it when you halted.  
+
+##Destroying the VM##
+
+If for some reason you don't need the VM anymore, or you want to start
+over with a clean install, you can remove the VM competely by typing:
+
+     vagrant destroy
+
 
