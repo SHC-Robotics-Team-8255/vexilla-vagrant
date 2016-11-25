@@ -6,7 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
-  config.vm.box = "gherlein/vexilla2"
+  config.vm.box = "ubuntu/trusty64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -33,8 +33,8 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  config.ssh.username = "vagrant"
-  config.ssh.password = "vagrant"
+  #config.ssh.username = "vagrant"
+  #config.ssh.password = "vagrant"
   
   config.vm.provider "virtualbox" do |vb|
       vb.gui = false
