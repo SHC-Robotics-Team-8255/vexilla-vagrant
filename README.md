@@ -1,11 +1,11 @@
-#Vexilla on Vagrant#
+# Vexilla on Vagrant #
 
 If you have a Mac Air you should probably just install the native Mac
 tools (per vexilla instructions).  If you don't want to use the cloud
 server option (vexilla.herlein.com) and your computer is reasonably
 modern you can choose to run a virtual machine.
 
-##Installation##
+## Installation ##
 
 You will need to install:
 
@@ -29,7 +29,7 @@ launching you can ssh to that virtual machine by typing:
 You will then be logged into a linux computer running virtually on
 your computer.
 
-##Installing Vexilla##
+## Installing Vexilla ##
 
 First we need to get it ready by installing tools and generating
 keys.  From the command line in the linux shell:
@@ -42,7 +42,7 @@ keys.  From the command line in the linux shell:
 
 Follow the directions per Vexilla to get the tools installed
 
-##Notes##
+## Notes ##
 
 This vagrant file has the necessary commands to support USB
 passthrough so that you can install code onto the robot.  Some
@@ -55,7 +55,7 @@ Note that to issue vagrant commands to the VM you MUST be in the
 directory where this Vagrantfile is.  You cannot be in another directory.
 
 
-##Stopping and Starting the Linux VM##
+## Stopping and Starting the Linux VM ##
 
 To stop the VM, exit the ssh session back to your computer terminal
 (press ctrl-D).  Then type:
@@ -69,7 +69,7 @@ start it again type:
 
 It will keep all the files you left on it when you halted.  
 
-##Destroying the VM##
+## Destroying the VM ##
 
 If for some reason you don't need the VM anymore, or you want to start
 over with a clean install, you can remove the VM competely by typing:
